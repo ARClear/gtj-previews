@@ -1,0 +1,3 @@
+# Client review previews — not for search engines.
+User-agent: *
+Disallow: /
