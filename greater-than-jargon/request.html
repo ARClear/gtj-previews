@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!-- Site designed and built by Greater Than Jargon -->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Request a Website | Greater Than Jargon</title>
+  <meta name="description" content="Tell Greater Than Jargon about your business and the website you need. No tech words required; you get a reply in plain English.">
+  <!-- PREVIEW ONLY: remove this robots tag at launch -->
+  <meta name="robots" content="noindex, nofollow">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Greater Than Jargon">
+  <meta property="og:title" content="Request a Website | Greater Than Jargon">
+  <meta property="og:description" content="Tell Greater Than Jargon about your business and the website you need. No tech words required; you get a reply in plain English.">
+  <!-- PLACEHOLDER share image: make this an absolute URL once the domain is live -->
+  <meta property="og:image" content="images/og/greater-than-jargon-share.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="The Greater Than Jargon logo, >jargon, with the slogan: I speak tech. You don't have to.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#0B1A33">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=JetBrains+Mono:wght@400;700&display=swap">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>document.documentElement.className = "js";</script>
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo header-logo" href="index.html">
+        <span aria-hidden="true"><span class="logo-gt">&gt;</span>jargon</span>
+        <span class="visually-hidden">Greater Than Jargon home</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="visually-hidden">Menu</span>
+        <svg class="icon-open" width="28" height="28" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <svg class="icon-close" width="28" height="28" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Main">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a class="button" href="request.html" aria-current="page">Request</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container request">
+    <div class="page-header">
+      <h1>Request a website</h1>
+      <!-- PLACEHOLDER intro copy -->
+      <p class="lede">Tell me about your business and what you need. No tech words required. I'll read it myself and reply in plain English.</p>
+    </div>
+
+    <!-- PLACEHOLDER: replace XXXXXXX with the Formspree form ID -->
+    <form class="request-form" action="https://formspree.io/f/XXXXXXX" method="POST" data-request-form>
+      <input type="hidden" name="_subject" value="New website request from Greater Than Jargon">
+
+      <div class="field">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" autocomplete="name" required data-validate aria-describedby="name-error">
+        <p class="field-error" id="name-error"></p>
+      </div>
+
+      <div class="field">
+        <label for="business">Business name</label>
+        <input id="business" name="business" type="text" autocomplete="organization" required data-validate aria-describedby="business-error">
+        <p class="field-error" id="business-error"></p>
+      </div>
+
+      <div class="field">
+        <label for="phone">Phone</label>
+        <input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required pattern="(\+?1[\s.\-]?)?\(?\d{3}\)?[\s.\-]?\d{3}[\s.\-]?\d{4}" data-validate aria-describedby="phone-error">
+        <p class="field-error" id="phone-error"></p>
+      </div>
+
+      <div class="field">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" autocomplete="email" required data-validate aria-describedby="email-error">
+        <p class="field-error" id="email-error"></p>
+      </div>
+
+      <div class="field">
+        <label for="domain">Web domain <span class="optional">(optional)</span></label>
+        <span class="hint" id="domain-hint">Only if you already have one, like mybusiness.com.</span>
+        <input id="domain" name="domain" type="text" autocomplete="url" inputmode="url" autocapitalize="off" spellcheck="false" aria-describedby="domain-hint">
+      </div>
+
+      <div class="field">
+        <label for="details">What are you looking for?</label>
+        <span class="hint" id="details-hint">A brand-new website, a fix for the one you have, or something else. A sentence or two is plenty.</span>
+        <textarea id="details" name="details" rows="6" required data-validate aria-describedby="details-hint details-error"></textarea>
+        <p class="field-error" id="details-error"></p>
+      </div>
+
+      <!-- Spam trap: people never see this field; bots fill it in. -->
+      <div class="hp" aria-hidden="true">
+        <label for="gotcha">Leave this field empty</label>
+        <input id="gotcha" type="text" name="_gotcha" tabindex="-1" autocomplete="off">
+      </div>
+
+      <!-- PLACEHOLDER: Cloudflare's always-pass test key. Replace with the real Turnstile site key. -->
+      <div class="cf-turnstile" data-sitekey="1x00000000000000000000AA" data-theme="dark"></div>
+
+      <div class="form-actions">
+        <button class="button button--large" type="submit">Send request</button>
+      </div>
+      <p class="form-status" role="alert"></p>
+    </form>
+
+    <div class="form-success" id="form-success" tabindex="-1" hidden>
+      <h2>Request sent</h2>
+      <!-- PLACEHOLDER: confirm the usual reply time -->
+      <p>Thanks. I'll read it and get back to you within two business days.</p>
+      <p data-preview-note hidden><strong>Preview only:</strong> this form isn't connected yet, so nothing was sent.</p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="logo footer-logo"><span aria-hidden="true"><span class="logo-gt">&gt;</span>jargon</span><span class="visually-hidden">Greater Than Jargon</span></p>
+      <p class="copyright">© <span data-year>2026</span> Greater Than Jargon</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>
