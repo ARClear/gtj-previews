@@ -1,4 +1,4 @@
-/* Baked by BK — nav toggle, hero carousel, request form helpers. */
+/* Baked by B&K — nav toggle, hero carousel, request form helpers. */
 (function () {
   "use strict";
 
@@ -160,14 +160,14 @@
     var messages = {
       name: { valueMissing: "Enter your name." },
       phone: {
-        valueMissing: "Enter a cell phone number Brandy can text or call.",
+        valueMissing: "Enter a cell phone number Brandi can text or call.",
         patternMismatch: "Enter a 10-digit phone number, like 816-555-0123."
       },
       email: {
         valueMissing: "Enter your email address.",
         typeMismatch: "Enter an email address like name@example.com."
       },
-      request: { valueMissing: "Tell Brandy what you'd like and the date you need it." }
+      request: { valueMissing: "Tell Brandi what you'd like and the date you need it." }
     };
 
     form.setAttribute("novalidate", "");
